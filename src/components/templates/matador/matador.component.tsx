@@ -88,7 +88,7 @@ const MatadorComponent = () => {
             {showResults && (
                 <ul className={S.resultList}>
                     <h4 className={S.resultHeader}>
-                        {debouncedQuery} siges {allMatchingEntries.length} gange i {filteredResults.length} afsnit
+                        "{debouncedQuery}" siges {allMatchingEntries.length} gange i {filteredResults.length} afsnit
                     </h4>
                     {filteredResults.map((ep) => (
                         <li key={ep.episode} className={S.episodeItem}>

@@ -1,13 +1,8 @@
-import BasicLink from "../components/atoms/Link/Link.component";
+import MatadorComponent from "../components/templates/matador/matador.component";
 
 const IndexPage = () => { 
     return (
-        <div>
-            <BasicLink href="/matador" >
-                <h1>M</h1>
-               
-            </BasicLink>
-        </div>
+        <MatadorComponent />
     );
 };
 
