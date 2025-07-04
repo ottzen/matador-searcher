@@ -1,0 +1,10 @@
+@mixin link-style() {
+    // --icon-color: var(--link-icon-color, var(--link-color, var(--color-primary-1)));
+    color: var(--link-color, var(--color-primary));
+    text-decoration: underline;
+
+    &:hover {
+        // --icon-color: var(--link-icon-hover-color, var(--link-icon-color, var(--link-hover-color, var(--link-color, var(--color-grey-90)))));
+        color: var(--link-hover-color, var(--link-color, var(--color-grey-90)));
+    }
+}

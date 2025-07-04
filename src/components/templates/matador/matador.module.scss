@@ -1,0 +1,92 @@
+.container {
+    
+}
+
+.searchBar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 50px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+
+    input {
+        flex-grow: 1;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .clearButton {
+        background: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+}
+
+.resultList {
+    list-style: none;
+    padding: 0;
+}
+
+.resultHeader {
+    margin-bottom: 20px;
+}
+
+.episodeItem {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.episodeHeader {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin: 0;
+}
+
+.subtitleList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subtitleEntry {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+
+    &:last-child {
+    padding-bottom: 0;
+        border-bottom: none;
+    }
+}
+
+.tooltipLink {
+    font-size: 12px;
+}
+
+.line {
+    margin-right: 3px;
+    font-weight: bold;
+}
+
+.resume {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 500;
+}

@@ -1,0 +1,18 @@
+@import "../helpers/all";
+
+html  {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background: rgb(249, 249, 249);
+}
+
+a {
+    @include link-style();
+}

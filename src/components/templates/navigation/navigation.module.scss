@@ -1,0 +1,20 @@
+.container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    gap: 10px;
+    list-style-type: none;
+    height: 50px;
+    z-index: 1;
+}
+
+.active {
+    color: red;
+    font-weight: bold;
+}
