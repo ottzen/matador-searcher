@@ -7,9 +7,9 @@
     gap: 10px;
     margin-bottom: 10px;
     position: sticky;
-    top: 50px;
+    top: 0;
     background-color: #ffffff;
-    padding-bottom: 10px;
+    padding: 10px;    
 
     input {
         flex-grow: 1;
@@ -28,7 +28,7 @@
 
 .resultList {
     list-style: none;
-    padding: 0;
+    padding: 0 10px;
 }
 
 .resultHeader {
@@ -89,4 +89,9 @@
 .italic {
     font-style: italic;
     font-weight: 500;
+}
+
+.spinnerWrapper {
+    display: flex;
+    align-items: center;
 }

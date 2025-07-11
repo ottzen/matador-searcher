@@ -10,7 +10,7 @@ export const useHighlightText = () => {
         return parts.map((part, index) => {
             // If part matches the query, highlight it
             if (part.toLowerCase() === query.toLowerCase()) {
-                return <strong key={index} style={{ backgroundColor: "yellow" }}>{part}</strong>;
+                return <strong key={index} style={{ backgroundColor: "#238933", color: "white", borderRadius: "5px", padding: "2px" }}>{part}</strong>;
             }
 
             // Otherwise, return part as plain text

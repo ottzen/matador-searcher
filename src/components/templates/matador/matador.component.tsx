@@ -44,7 +44,6 @@ const MatadorComponent = () => {
     };
 
     const allLines = getAllLinesFromAllEpisodes();
-    console.log(allLines.length)
 
     const shouldShowResults = debouncedQuery.length > 1 && filteredResults.length > 0;
     if (shouldShowResults && !showResults) setShowResults(true);
@@ -63,7 +62,7 @@ const MatadorComponent = () => {
             <div className={S.searchBar}>
                 <input
                     type="text"
-                    placeholder="Search subtitles..."
+                    placeholder="Søg efter matador replik..."
                     value={searchQuery}
                     onChange={(e) => {
                         setSearchQuery(e.target.value)
@@ -78,12 +77,13 @@ const MatadorComponent = () => {
             </div>
 
             {searchQuery !== "" && !showResults && (
-                <div>
+                <div className={S.spinnerWrapper}>
                     <Spinner />
+                    <span>
                     ` Søger i {allLines.length} replikker...`
+                    </span>
                 </div>
             )}
-
 
             {showResults && (
                 <ul className={S.resultList}>
