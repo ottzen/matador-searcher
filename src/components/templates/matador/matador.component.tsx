@@ -68,7 +68,7 @@ const MatadorComponent = () => {
 
                 <input
                     type="text"
-                    placeholder="Søg efter matador replik..."
+                    placeholder={`Søg i ${allLines.length} replikker...`}
                     value={searchQuery}
                     onChange={(e) => {
                         setSearchQuery(e.target.value)
