@@ -5,7 +5,7 @@ import { formatTime } from "./hooks/useFormatTime.hook";
 import EpisodeInfoComponent from "./components/episodeInfo/episodeInfo.component";
 import { useDebounce } from "react-use";
 import { Spinner } from "../../organims/Spinner/Spinner.component";
-import { FaInfoCircle } from "react-icons/fa";
+import { FaInfoCircle, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import S from "./matador.module.scss";
 
 const MatadorComponent = () => {
@@ -86,45 +86,84 @@ const MatadorComponent = () => {
                 </div>
             )}
 
-            {showResults && (
-                <ul className={S.resultList}>
-                    <h4 className={S.resultHeader}>
-                        "{debouncedQuery}" siges {allMatchingEntries.length} gange i {filteredResults.length} afsnit
-                    </h4>
-                    {filteredResults.map((ep) => (
-                        <li key={ep.episode} className={S.episodeItem}>
-                            <div className={S.episodeHeader}>
-                                {ep.results.length > 0 && (
-                                    <div className={S.episodeInfoWrapper}>
-                                        <span>
-                                            <strong>{ep.results.length} hits</strong> i {ep.episode} - {ep.episodeTitle}
-                                        </span>
-                                        <button className={S.episodeInfo} onClick={() => toggleInfo(ep.episode)} ><FaInfoCircle /> {showInfo[ep.episode] ? "Luk info om episode" : "Se info om episode"}</button>
+            <div className={S.wrapper}>
+                <div className={S.section1}>
+                    {showResults ? (
+                        <ul className={S.resultList}>
+                            <h4 className={S.resultHeader}>
+                                "{debouncedQuery}" siges {allMatchingEntries.length} gange i {filteredResults.length} afsnit
+                            </h4>
+                            {filteredResults.map((ep) => (
+                                <li key={ep.episode} className={S.episodeItem}>
+                                    <div className={S.episodeHeader}>
+                                        {ep.results.length > 0 && (
+                                            <div className={S.episodeInfoWrapper}>
+                                                <span>
+                                                    <strong>{ep.results.length} hits</strong> i {ep.episode} - {ep.episodeTitle}
+                                                </span>
+                                                <button className={S.episodeInfo} onClick={() => toggleInfo(ep.episode)} ><FaInfoCircle /> {showInfo[ep.episode] ? "Luk info om episode" : "Se info om episode"}</button>
+                                            </div>
+                                        )}
                                     </div>
-                                )}
-                            </div>
-                            {showInfo[ep.episode] && (
-                                <EpisodeInfoComponent {...ep} />
-                            )}
-                            <ul className={S.subtitleList}>
-                                {ep.results.map((entry, index) => (
-                                    <li key={index} className={S.subtitleEntry}>
-                                        <div>
-                                            {entry.lines.map((lineObj, i) => (
-                                                <span className={S.line} key={i}>{highlightText(lineObj.line, searchQuery)}</span>
-                                            ))}
-                                            {entry.resume === true && <span className={S.resume}>(en del af resuméet)</span>}
-                                        </div>
-                                        <span>
-                                            Siges efter {formatTime(entry.start)} i <span className={S.italic}>{ep.episode} - {ep.episodeTitle}</span>
-                                        </span>
-                                    </li>
-                                ))}
-                            </ul>
+                                    {showInfo[ep.episode] && (
+                                        <EpisodeInfoComponent {...ep} />
+                                    )}
+                                    <ul className={S.subtitleList}>
+                                        {ep.results.map((entry, index) => (
+                                            <li key={index} className={S.subtitleEntry}>
+                                                <div>
+                                                    {entry.lines.map((lineObj, i) => (
+                                                        <span className={S.line} key={i}>{highlightText(lineObj.line, searchQuery)}</span>
+                                                    ))}
+                                                    {entry.resume === true && <span className={S.resume}>(en del af resuméet)</span>}
+                                                </div>
+                                                <span>
+                                                    Siges efter {formatTime(entry.start)} i <span className={S.italic}>{ep.episode} - {ep.episodeTitle}</span>
+                                                </span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <div className={S.noResults}>
+                            Vidste du at "Varnæs" bliver sagt 175 gange i løbet af serien? <br /><br />
+                            Brug søgefeltet til at søge efter ord eller hele replikker
+                        </div>
+                    )}
+                </div>
+                <div className={S.section2}>
+                    <h4 className={S.resultHeader}>Om websitet</h4>
+                    Websitet/søgemotoren er lavet som et hobbyprojekt af Kasper Søgaard Ottzen.
+                    <div className={S.socialMediaIcons}>
+                        <a href="https://www.facebook.com/ottzen" target="_blank" className={S.socialMediaIcon}><FaFacebook /></a>
+                        <a href="https://www.instagram.com/kasperottzen" target="_blank" className={S.socialMediaIcon}><FaInstagram /></a>
+                        <a href="https://www.linkedin.com/in/kasperottzen" target="_blank" className={S.socialMediaIcon}><FaLinkedin /></a>
+                    </div>
+                    <div>
+                        Email: <a className={S.emailLink} href="mailto:kasper@ottzen.com">kasper@ottzen.com</a>
+                    </div>
+                    <br/>
+                    I er velkomne til at sende ris/ros, fejl og mangler, eller forslag til forbedringer - både datamæssigt og lauout/designmæssigt.
+                    <br />
+                    Søgemotoren søger i {allLines.length} replikker fra alle 24 afsnit af Matador.
+                    <br /><br />
+                    Undertekster er hentet som srt filer. 1 fil for hvert afsnit. Heri står replikker og tilhørende timetamps/tidspunkt hvornår replik bliver sagt. <br />
+                    Dertil har jeg lavet en javascript funktion der kunne kigge disse srt filer igennem og lave dem om til et JSON format, som søgemotoren kan bruge til at søge i.
+                    <br /><br />
+                    <strong>Kendte fejl:</strong>
+                    <ul>
+                        <li>Episode 7 - Fødselsdagen: <br />
+                            I hele dette afsnit passer replikker og tidspunkter ikke sammen. Dette er fordi at den srt fil jeg har brugt (og som er den eneste jeg har kunnet finde)
+                            har det gamle resume fra før Matador blev restaureret. Og dette resume er kortere end det, som er brugt i den restaurerede version hvor der er indtalt nyt resume.
+                            <br /><br />
+                            Se den "gamle" version af <a href="https://www.kb.dk/find-materiale/dr-arkivet/post/ds.tv:oai:io:90cd6a06-1f19-4d13-b0aa-a318aeb59479" target="_blank">fødselsdagen</a>
                         </li>
-                    ))}
-                </ul>
-            )}
+                    </ul>
+                </div>
+            </div>
+
 
         </div>
     );

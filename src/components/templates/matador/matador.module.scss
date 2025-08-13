@@ -1,3 +1,49 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 0 10px 10px 10px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; // Stack columns on mobile
+        grid-template-rows: auto auto; // Allow rows to size based on content
+    }
+}
+
+.section1, .section2 {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+}
+
+.section1 {
+    background-color: #ebebeb;
+    
+
+    @media (max-width: 768px) {
+        justify-content: flex-start;
+    }
+}
+
+.section2 {
+    font-size: 13px;
+    padding: 10px;
+    position: sticky;
+    top: 60px; // Adjust this value based on your searchBar height
+    align-self: start; // This is important for sticky positioning in grid
+    max-height: calc(100vh - 80px); // Prevent it from being taller than viewport
+    overflow-y: auto; // Allow scrolling if content is too long
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        position: static; // Remove sticky positioning on mobile
+        max-height: none; // Remove height restriction on mobile
+    }
+}
+
+
 .searchBar {
     display: flex;
     gap: 10px;
@@ -5,7 +51,8 @@
     position: sticky;
     top: 0;
     background-color: #ffffff;
-    padding: 10px;    
+    padding: 10px;
+    z-index: 2;    
 
     input {
         flex-grow: 1;
@@ -29,11 +76,16 @@
 
 .resultList {
     list-style: none;
-    padding: 0 10px;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    width: 100%;
 }
 
 .resultHeader {
     margin-bottom: 20px;
+    margin-block-start: 0;
+    margin-top: 20px;
+    padding-left: 5px;
 }
 
 .episodeItem {
@@ -118,4 +170,42 @@
     align-items: center;
     gap: 4px;
     cursor: pointer;
+}
+
+.noResults {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+.socialMediaIcons {
+    display: flex;
+    gap: 6px;
+    margin: 5px 0 0 0
+}
+
+.socialMediaIcon {
+    font-size: 20px;
+    color: #333;
+
+    &:hover {
+        color: #656565;
+    }
+}
+
+.emailLink {
+    color: #333;
+    text-decoration: underline;
+
+    &:hover {
+        color: #656565;
+    }
 }
