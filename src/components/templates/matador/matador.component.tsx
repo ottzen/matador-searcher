@@ -135,7 +135,7 @@ const MatadorComponent = () => {
                 </div>
                 <div className={S.section2}>
                     <h4 className={S.resultHeader}>Om websitet</h4>
-                    Websitet/søgemotoren er lavet som et hobbyprojekt af Kasper Søgaard Ottzen.
+                    Websitet/søgemotoren er lavet som et hobbyprojekt af <br />Kasper Søgaard Ottzen.
                     <div className={S.socialMediaIcons}>
                         <a href="https://www.facebook.com/ottzen" target="_blank" className={S.socialMediaIcon}><FaFacebook /></a>
                         <a href="https://www.instagram.com/kasperottzen" target="_blank" className={S.socialMediaIcon}><FaInstagram /></a>
