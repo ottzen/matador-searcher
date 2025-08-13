@@ -1,24 +1,19 @@
 import BasicLink from "../../../../atoms/Link/Link.component";
+import { EpisodeData } from "../../interfaces/episodeData.interface";
 import S from "./episodeInto.module.scss"
 
-type EpisodeInfoComponentProps = {
-    episode: string;
-    episodeTitle: string;
-    period: string;
-    season: string;
-    playTime: string;
-    drTvUrl: string;
-};
-
-const EpisodeInfoComponent = (props: EpisodeInfoComponentProps) => {
+const EpisodeInfoComponent = (props: EpisodeData) => {
     return (
         <>
             <div className={S.episodeInfo} >
+                <div>Episode nr: {props.episodeNumber}</div>
                 <div>Titel: {props.episodeTitle}</div>
                 <div>År: {props.period}</div>
                 <div>Sæson: {props.season}</div>
                 <div>Varighed: {props.playTime}</div>
-                <BasicLink href={props.drTvUrl} target="_blank">Se {props.episode} - {props.episodeTitle} på DRTV</BasicLink>
+                {props.drTvUrl && (
+                    <BasicLink href={props.drTvUrl} target="_blank">Se {props.episode} - {props.episodeTitle} på DRTV</BasicLink>
+                )}
             </div>
         </>
     );

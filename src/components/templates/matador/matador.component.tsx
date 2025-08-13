@@ -5,6 +5,7 @@ import { formatTime } from "./hooks/useFormatTime.hook";
 import EpisodeInfoComponent from "./components/episodeInfo/episodeInfo.component";
 import { useDebounce } from "react-use";
 import { Spinner } from "../../organims/Spinner/Spinner.component";
+import { FaInfoCircle } from "react-icons/fa";
 import S from "./matador.module.scss";
 
 const MatadorComponent = () => {
@@ -60,6 +61,11 @@ const MatadorComponent = () => {
     return (
         <div className={S.container}>
             <div className={S.searchBar}>
+
+                <button onClick={() => setSearchQuery("")} disabled={!searchQuery} className={S.clearButton}>
+                    Ryd
+                </button>
+
                 <input
                     type="text"
                     placeholder="Søg efter matador replik..."
@@ -69,18 +75,13 @@ const MatadorComponent = () => {
                         setShowInfo({})
                     }}
                 />
-                {searchQuery && (
-                    <button onClick={() => setSearchQuery("")} className={S.clearButton}>
-                        Ryd
-                    </button>
-                )}
             </div>
 
             {searchQuery !== "" && !showResults && (
                 <div className={S.spinnerWrapper}>
                     <Spinner />
                     <span>
-                    ` Søger i {allLines.length} replikker...`
+                        ` Søger i {allLines.length} replikker...`
                     </span>
                 </div>
             )}
@@ -94,11 +95,13 @@ const MatadorComponent = () => {
                         <li key={ep.episode} className={S.episodeItem}>
                             <div className={S.episodeHeader}>
                                 {ep.results.length > 0 && (
-                                    <div><strong>{ep.results.length} hits</strong> i {ep.episode} - {ep.episodeTitle}</div>
+                                    <div className={S.episodeInfoWrapper}>
+                                        <span>
+                                            <strong>{ep.results.length} hits</strong> i {ep.episode} - {ep.episodeTitle}
+                                        </span>
+                                        <button className={S.episodeInfo} onClick={() => toggleInfo(ep.episode)} ><FaInfoCircle /> {showInfo[ep.episode] ? "Luk info om episode" : "Se info om episode"}</button>
+                                    </div>
                                 )}
-                                <button onClick={() => toggleInfo(ep.episode)}>
-                                    Info om afsnit
-                                </button>
                             </div>
                             {showInfo[ep.episode] && (
                                 <EpisodeInfoComponent {...ep} />
