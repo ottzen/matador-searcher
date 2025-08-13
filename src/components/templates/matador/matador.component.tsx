@@ -146,8 +146,6 @@ const MatadorComponent = () => {
                     </div>
                     <br/>
                     I er velkomne til at sende ris/ros, fejl og mangler, eller forslag til forbedringer - både datamæssigt og lauout/designmæssigt.
-                    <br />
-                    Søgemotoren søger i {allLines.length} replikker fra alle 24 afsnit af Matador.
                     <br /><br />
                     Undertekster er hentet som srt filer. 1 fil for hvert afsnit. Heri står replikker og tilhørende timetamps/tidspunkt hvornår replik bliver sagt. <br />
                     Dertil har jeg lavet en javascript funktion der kunne kigge disse srt filer igennem og lave dem om til et JSON format, som søgemotoren kan bruge til at søge i.
