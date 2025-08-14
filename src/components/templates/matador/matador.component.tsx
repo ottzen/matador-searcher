@@ -150,7 +150,7 @@ const MatadorComponent = () => {
                     Undertekster er hentet som srt filer. 1 fil for hvert afsnit. Heri står replikker og tilhørende timetamps/tidspunkt hvornår replik bliver sagt. <br />
                     Dertil har jeg lavet en javascript funktion der kunne kigge disse srt filer igennem og lave dem om til et JSON format, som søgemotoren kan bruge til at søge i.
                     <br /><br />
-                    <strong>Kendte fejl:</strong>
+                    <strong>Fejl:</strong>
                     <ul>
                         <li>Episode 7 - Fødselsdagen: <br />
                             I hele dette afsnit passer replikker og tidspunkter ikke sammen. Dette er fordi at den srt fil jeg har brugt (og som er den eneste jeg har kunnet finde)
