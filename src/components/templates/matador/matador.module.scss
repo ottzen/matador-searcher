@@ -5,8 +5,8 @@
     padding: 0 10px 10px 10px;
 
     @media (max-width: 768px) {
-        grid-template-columns: 1fr; // Stack columns on mobile
-        grid-template-rows: auto auto; // Allow rows to size based on content
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
     }
 }
 
@@ -28,19 +28,19 @@
 
 .section2 {
     color: rgb(22 79 31);
-    font-size: 13px;
+    font-size: 14px;
     padding: 10px;
     position: sticky;
-    top: 60px; // Adjust this value based on your searchBar height
-    align-self: start; // This is important for sticky positioning in grid
-    max-height: calc(100vh - 80px); // Prevent it from being taller than viewport
-    overflow-y: auto; // Allow scrolling if content is too long
+    top: 60px;
+    align-self: start;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
 
     @media (max-width: 768px) {
-        position: static; // Remove sticky positioning on mobile
-        max-height: none; // Remove height restriction on mobile
+        position: static;
+        max-height: none;
     }
 }
 
