@@ -160,6 +160,8 @@
 .episodeInfoWrapper {
     display: flex;
     align-items: baseline;
+    width: calc(100% - 10px);
+    justify-content: space-between;
 }
 
 .episodeInfo {
@@ -171,6 +173,10 @@
     align-items: center;
     gap: 4px;
     cursor: pointer;
+}
+
+.episodeHits {
+    text-decoration: underline;
 }
 
 .noResults {

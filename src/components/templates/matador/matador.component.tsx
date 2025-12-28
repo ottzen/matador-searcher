@@ -98,7 +98,7 @@ const MatadorComponent = () => {
                                     <div className={S.episodeHeader}>
                                         {ep.results.length > 0 && (
                                             <div className={S.episodeInfoWrapper}>
-                                                <span>
+                                                <span className={S.episodeHits}>
                                                     <strong>{ep.results.length} hits</strong> i {ep.episode} - {ep.episodeTitle}
                                                 </span>
                                                 <button className={S.episodeInfo} onClick={() => toggleInfo(ep.episode)} ><FaInfoCircle /> {showInfo[ep.episode] ? "Luk info om episode" : "Se info om episode"}</button>
@@ -148,15 +148,23 @@ const MatadorComponent = () => {
                     I er velkomne til at sende ris/ros, fejl og mangler, eller forslag til forbedringer - både datamæssigt og lauout/designmæssigt.
                     <br /><br />
                     Undertekster er hentet som srt filer. 1 fil for hvert afsnit. Heri står replikker og tilhørende timetamps/tidspunkt hvornår replik bliver sagt. <br />
-                    Dertil har jeg lavet en javascript funktion der kunne kigge disse srt filer igennem og lave dem om til et JSON format, som søgemotoren kan bruge til at søge i.
+                    Jeg har derefter konverteret disse srt filer om til JSON format, som søgemotoren kan bruge til at søge i.
                     <br /><br />
                     <strong>Fejl:</strong>
                     <ul>
-                        <li>Episode 7 - Fødselsdagen: <br />
+                        <li>
+                            Episode 7 - Fødselsdagen: <br />
                             I hele dette afsnit passer replikker og tidspunkter ikke sammen. Dette er fordi at den srt fil jeg har brugt (og som er den eneste jeg har kunnet finde)
                             har det gamle resume fra før Matador blev restaureret. Og dette resume er kortere end det, som er brugt i den restaurerede version hvor der er indtalt nyt resume.
                             <br /><br />
                             Se den "gamle" version af <a href="https://www.kb.dk/find-materiale/dr-arkivet/post/ds.tv:oai:io:90cd6a06-1f19-4d13-b0aa-a318aeb59479" target="_blank">fødselsdagen</a>
+                        </li>
+                    <br />
+                        <li>
+                            Alle replikker som siges i serien er ikke gengivet 100% korrekt i underteksterne. <br />
+                            Jeg ved ikke om det kan være fordi skuespillerne improviserer når det inspilles.<br />
+                            Så der vil være nogle replikker som ikke bliver fundet, selvom de er sagt i serien. <br />
+                            Jeg overvejer at gennemgå samtligere undertekster manuelt og rette dem. Men det er et stort arbejde. Så det er noget der vil komme løbende.
                         </li>
                     </ul>
                 </div>

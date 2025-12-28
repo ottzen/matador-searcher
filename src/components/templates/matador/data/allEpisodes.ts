@@ -32,7 +32,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1929",
         season: "1",
         playTime: "45min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-den-rejsende_130377",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-den-rejsende_540758",
         data: Episode1,
     },
     {
@@ -42,7 +42,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1929",
         season: "1",
         playTime: "41min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-genboen_130378",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-genboen_540753",
         data: Episode2,
     },
     {
@@ -52,7 +52,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1930",
         season: "1",
         playTime: "50min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-skiftedag_130387",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-skiftedag_540743",
         data: Episode3,
     },
     {
@@ -62,7 +62,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1931",
         season: "1",
         playTime: "55min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-skyggetanten_130390",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-skyggetanten_540759",
         data: Episode4,
     },
     {
@@ -72,7 +72,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1932",
         season: "1",
         playTime: "1 time",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-den-enes-doed_130388",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-den-enes-doed_540752",
         data: Episode5,
     },
     {
@@ -82,7 +82,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1932",
         season: "1",
         playTime: "56min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-opmarch_130399",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-opmarch_540750",
         data: Episode6,
     },
     {
@@ -92,7 +92,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1933",
         season: "2",
         playTime: "1 time, 15min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-foedselsdagen_130396",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-foedselsdagen_540744",
         data: Episode7,
     },
     {
@@ -102,7 +102,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1934",
         season: "2",
         playTime: "1 time, 17min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-komme-fremmede_130391",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-komme-fremmede_540755",
         data: Episode8,
     },
     {
@@ -112,7 +112,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1935",
         season: "2",
         playTime: "1 time, 5min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-hen-til-kommoden_130386",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-hen-til-kommoden_540742",
         data: Episode9,
     },
     {
@@ -122,7 +122,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1935",
         season: "2",
         playTime: "1 time, 5min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-i-disse-tider_130394",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-i-disse-tider_540741",
         data: Episode10,
     },
     {
@@ -132,7 +132,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1936",
         season: "2",
         playTime: "1 time, 13min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-i-klemme_130400",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-i-klemme_540754",
         data: Episode11,
     },
     {
@@ -142,7 +142,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1936-1937",
         season: "2",
         playTime: "1 time, 22min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-i-lyst-og-noed_130395",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-i-lyst-og-noed_540749",
         data: Episode12,
     },
     {
@@ -152,7 +152,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1937-1938",
         season: "3",
         playTime: "1 time, 24min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-et-nyt-liv_130404",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-et-nyt-liv_540760",
         data: Episode13,
     },
     {
@@ -162,7 +162,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1938-1939",
         season: "3",
         playTime: "1 time, 13min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-brikkerne_130407",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-brikkerne_540740",
         data: Episode14,
     },
     {
@@ -172,7 +172,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1939",
         season: "3",
         playTime: "1 time, 13min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-at-taenke-og-tro_130409",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-at-taenke-og-tro_540761",
         data: Episode15,
     },
     {
@@ -182,7 +182,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1940",
         season: "3",
         playTime: "1 time, 25min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-lauras-store-dag_130406",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-lauras-store-dag_540738",
         data: Episode16,
     },
     {
@@ -192,7 +192,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1941-1942",
         season: "3",
         playTime: "1 time, 20min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-de-voksnes-raekker_130403",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-de-voksnes-raekker_540756",
         data: Episode17,
     },
     {
@@ -202,7 +202,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1943",
         season: "3",
         playTime: "1 time, 20min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-hr-stein_130405",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-hr-stein_540748",
         data: Episode18,
     },
     {
@@ -212,7 +212,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1944",
         season: "4",
         playTime: "58min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-handel-og-vandel_130412",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-handel-og-vandel_540739",
         data: Episode19,
     },
     {
@@ -222,7 +222,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1945",
         season: "4",
         playTime: "1 time, 2min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-den-11-time_130408",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-den-11-time_540745",
         data: Episode20,
     },
     {
@@ -232,7 +232,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1945",
         season: "4",
         playTime: "59min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-vi-vil-fred-her-til-lands_130410",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-vi-vil-fred-her-til-lands_540746",
         data: Episode21,
     },
     {
@@ -242,7 +242,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1945-1946",
         season: "4",
         playTime: "58in",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-det-gaar-jo-godt_130411",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-det-gaar-jo-godt_540751",
         data: Episode22,
     },
     {
@@ -252,7 +252,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1946",
         season: "4",
         playTime: "1 time, 3min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-mellem-broedre_130414",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-mellem-broedre_540747",
         data: Episode23,
     },
     {
@@ -262,7 +262,7 @@ export const allEpisodes: EpisodeData[] = [
         period: "1947",
         season: "4",
         playTime: "1 time, 22min",
-        // drTvUrl: "https://www.dr.dk/drtv/se/matador_-new-look_130416",
+        drTvUrl: "https://www.dr.dk/drtv/se/matador_-new-look_540757",
         data: Episode24,
     }
 ];
