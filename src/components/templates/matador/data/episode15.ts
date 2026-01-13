@@ -2226,10 +2226,10 @@ export const Episode15: Episode =
         "end": "00:22:16,136",
         "lines": [
             {
-                "line": "Hun kendte mine følelser for kogt"
+                "line": "Hun kendte mine følelser for kogt fars"
             },
             {
-                "line": "fars. Det kan du måske ikke vide."
+                "line": "Det kan du måske ikke vide."
             }
         ]
     },
@@ -2238,11 +2238,8 @@ export const Episode15: Episode =
         "end": "00:22:20,413",
         "lines": [
             {
-                "line": "Du kan da prøve"
+                "line": "Du kan da prøve med et lille stykke, Frederik."
             },
-            {
-                "line": "med et lille stykke, Frederik."
-            }
         ]
     },
     {
