@@ -390,7 +390,10 @@ export const Episode1: Episode = [
         "end": "00:07:48,973",
         "lines": [
             {
-                "line": "Det er jo ligesom ham i løvekulen. Så skulle du jo sagtens kunne klare sådan en lille fyr som Kvik."
+                "line": "Det er jo ligesom ham i løvekulen."
+            },
+            {
+                "line": "Så skulle du jo sagtens kunne klare sådan en lille fyr som Kvik."
             }
         ]
     },
@@ -419,7 +422,6 @@ export const Episode1: Episode = [
         "start": "00:08:15,300",
         "end": "00:08:22,331",
         "lines": [
-            // Herfra 
             {
                 "line": "Blonderne gør underværker på den"
             },
@@ -448,7 +450,7 @@ export const Episode1: Episode = [
                 "line": "Vil De hilse Deres fru moder."
             },
             {
-                "line": "Nu er hun jo fyldt 96."
+                "line": "Ja nu er hun jo fyldt 96."
             }
         ]
     },
@@ -457,7 +459,7 @@ export const Episode1: Episode = [
         "end": "00:08:38,053",
         "lines": [
             {
-                "line": "Den vej skal vi jo alle."
+                "line": "Ja den vej skal vi jo alle."
             },
             {
                 "line": "Åh, pas på trinene!"
@@ -469,7 +471,7 @@ export const Episode1: Episode = [
         "end": "00:08:42,458",
         "lines": [
             {
-                "line": "Flyt dig, dreng!"
+                "line": "Vil du flytte dig dreng"
             },
             {
                 "line": "Og vi sender varen."
@@ -481,10 +483,7 @@ export const Episode1: Episode = [
         "end": "00:08:49,058",
         "lines": [
             {
-                "line": "Frk. Jørgensen, Arnold skal hen"
-            },
-            {
-                "line": "til frk. Fernando Møhge med denne."
+                "line": "Frk. Jørgensen, når Arnold viser sig skal hen til frk. Fernando Møhge med denne."
             }
         ]
     },
@@ -502,10 +501,7 @@ export const Episode1: Episode = [
         "end": "00:08:57,416",
         "lines": [
             {
-                "line": "Jeg rejser bl.a. for"
-            },
-            {
-                "line": "Villerøds Fabrikker ved Fredericia."
+                "line": "Jeg rejser bl.a. for illerøds Fabrikker ved Fredericia."
             }
         ]
     },
@@ -514,10 +510,7 @@ export const Episode1: Episode = [
         "end": "00:09:03,572",
         "lines": [
             {
-                "line": "Jeg kan vise Dem"
-            },
-            {
-                "line": "det sidste i færdigstrikkede trøjer."
+                "line": "Jeg kan vise Dem det sidste i færdigstrikkede trøjer"
             }
         ]
     },
@@ -529,7 +522,7 @@ export const Episode1: Episode = [
                 "line": "Hvis De vil sælge, må De vente."
             },
             {
-                "line": "Her er kunder. Stil Dem derover."
+                "line": "De ser her er kunder. Hvis de vil stille Dem derover."
             }
         ]
     },
@@ -571,10 +564,10 @@ export const Episode1: Episode = [
         "end": "00:09:34,853",
         "lines": [
             {
-                "line": "I år bruges voile"
+                "line": "I år bruges disse desiner"
             },
             {
-                "line": "og crepe de chine."
+                "line": "voile og crepe de chine."
             }
         ]
     },
@@ -586,7 +579,7 @@ export const Episode1: Episode = [
                 "line": "Medmindre fruen ønsker velour?"
             },
             {
-                "line": "Det er en ulden, jeg har brug for."
+                "line": "Det er nok mest noget ulden, jeg har brug for."
             }
         ]
     },
@@ -595,7 +588,7 @@ export const Episode1: Episode = [
         "end": "00:09:42,571",
         "lines": [
             {
-                "line": "De sagde en pæn kjole."
+                "line": "Jeg synes de sagde en pæn kjole."
             },
             {
                 "line": "Undskyld ..."
@@ -616,7 +609,7 @@ export const Episode1: Episode = [
         "end": "00:09:49,855",
         "lines": [
             {
-                "line": "Hvad kan jeg tjene Dem med?"
+                "line": "Fru apoteker Strøm, Fru Provienteringshandler Mortensen, hvad kan jeg tjene Dem med?"
             }
         ]
     },
@@ -625,10 +618,10 @@ export const Episode1: Episode = [
         "end": "00:09:55,737",
         "lines": [
             {
-                "line": "Er manufakturhandleren til stede?"
+                "line": "Er manufakturhandleren ikke selv til stede?"
             },
             {
-                "line": "Nej, desværre."
+                "line": "Nej, desværre. De må nøjes med min ringe hjælp"
             }
         ]
     },
@@ -665,6 +658,7 @@ export const Episode1: Episode = [
             }
         ]
     },
+    // herfra
     {
         "start": "00:10:11,180",
         "end": "00:10:14,058",
