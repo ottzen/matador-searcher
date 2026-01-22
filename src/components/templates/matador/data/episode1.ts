@@ -57,10 +57,7 @@ export const Episode1: Episode = [
         "end": "00:03:38,776",
         "lines": [
             {
-                "line": "Nå, Fede, skal du hjem og se,"
-            },
-            {
-                "line": "hvad mor har til middag?"
+                "line": "Nå, Fede, skal du hjem og se hvad mor har til middag?"
             }
         ]
     },
@@ -78,10 +75,7 @@ export const Episode1: Episode = [
         "end": "00:03:45,294",
         "lines": [
             {
-                "line": "Bankdirektør Varnæs med konen."
-            },
-            {
-                "line": "De skal med toget."
+                "line": "Bankdirektør Varnæs med konen. De skal med toget."
             }
         ]
     },
@@ -90,10 +84,7 @@ export const Episode1: Episode = [
         "end": "00:03:51,370",
         "lines": [
             {
-                "line": "De skal hente. Fruens søster"
-            },
-            {
-                "line": "og børnene har været på ferie."
+                "line": "De skal hente. Fruens søster og børnene har været på ferie."
             }
         ]
     },
@@ -102,10 +93,7 @@ export const Episode1: Episode = [
         "end": "00:03:55,858",
         "lines": [
             {
-                "line": "Boldt har kontakt"
-            },
-            {
-                "line": "med de højere kredse."
+                "line": "Boldt har kontakt med de højere kredse."
             }
         ]
     },
@@ -114,10 +102,7 @@ export const Episode1: Episode = [
         "end": "00:03:59,370",
         "lines": [
             {
-                "line": "Den kontakt kunne De vist"
-            },
-            {
-                "line": "godt tænke Dem, Lauritz Jensen."
+                "line": "Den kontakt kunne de vist godt tænke Dem, Lauritz Jensen."
             }
         ]
     },
@@ -126,10 +111,7 @@ export const Episode1: Episode = [
         "end": "00:04:04,449",
         "lines": [
             {
-                "line": "Røde interesserer sig sgu ikke"
-            },
-            {
-                "line": "for kvinder, kun for politik."
+                "line": "Røde interesserer sig sgu ikke for kvinder, kun for politik."
             }
         ]
     },
@@ -162,7 +144,7 @@ export const Episode1: Episode = [
         "end": "00:04:44,010",
         "lines": [
             {
-                "line": "Hvis han nu er faldet af toget?"
+                "line": "Tænk hvis han nu er faldet af toget?"
             },
             {
                 "line": "Vi skal bare finde ham."
@@ -207,7 +189,7 @@ export const Episode1: Episode = [
         "end": "00:05:12,448",
         "lines": [
             {
-                "line": "Undskyld, jeg troede ..."
+                "line": " ja undskyld, men jeg troede ..."
             }
         ]
     },
@@ -219,7 +201,7 @@ export const Episode1: Episode = [
                 "line": "Jamen der har vi jo Ulrik."
             },
             {
-                "line": "Jeg har låst mig inde!"
+                "line": "Jeg har låst mig inde, jeg har låst mig inde!"
             }
         ]
     },
@@ -273,19 +255,28 @@ export const Episode1: Episode = [
         "end": "00:06:48,288",
         "lines": [
             {
-                "line": "Du rører ikke ved noget, Ulrik!"
+                "line": "Og nu rører du ikke ved noget, Ulrik. Du holder hænderne for dig selv"
             }
         ]
     },
     {
         "start": "00:06:48,500",
         "end": "00:06:54,370",
-        "lines": [
+        "lines": [  
             {
-                "line": "Vi må have ham i sæbevand."
+                "line": "Vi må have ham i sæbevand med det samme."
             },
             {
-                "line": "Jeg skal hilse fra far og mor."
+                "line": "Jeg har helt glemt at hilse fra far og mor."
+            }
+        ]
+    },
+    {
+        "start": "00:06:52,580",
+        "end": "00:06:53,971",
+        "lines": [
+            {
+                "line": "Nå, og de har det godt?"
             }
         ]
     },
@@ -294,10 +285,10 @@ export const Episode1: Episode = [
         "end": "00:06:58,971",
         "lines": [
             {
-                "line": "Far skal til Pistian."
+                "line": "Ja bortset fra at far skal til Pistian."
             },
             {
-                "line": "Amtmandens årlige slamkur."
+                "line": "Åh Amtmandens årlige slamkur."
             }
         ]
     },
@@ -306,10 +297,7 @@ export const Episode1: Episode = [
         "end": "00:07:02,058",
         "lines": [
             {
-                "line": "Morfar har podagra"
-            },
-            {
-                "line": "ligesom kaptajn Vom."
+                "line": "Morfar har podagra ligesom kaptajn Vom."
             }
         ]
     },
@@ -318,7 +306,7 @@ export const Episode1: Episode = [
         "end": "00:07:04,615",
         "lines": [
             {
-                "line": "Hold de hænder i ro!"
+                "line": "Ulrik hold de hænder i ro!"
             }
         ]
     },
@@ -327,7 +315,7 @@ export const Episode1: Episode = [
         "end": "00:07:09,735",
         "lines": [
             {
-                "line": "Elisabeth, tag dig af ham."
+                "line": "Elisabeth, kan du ikke tage dig af ham."
             },
             {
                 "line": "Og Regitze har ikke været forkølet?"
@@ -339,10 +327,7 @@ export const Episode1: Episode = [
         "end": "00:07:14,456",
         "lines": [
             {
-                "line": "Nej, vi har undgået"
-            },
-            {
-                "line": "alle lurende farer."
+                "line": "Nej, som du ser, vi har undgået, alle lurende farer"
             }
         ]
     },
@@ -372,10 +357,7 @@ export const Episode1: Episode = [
         "end": "00:07:32,771",
         "lines": [
             {
-                "line": "Hvis du kommer herover,"
-            },
-            {
-                "line": "skal jeg vise dig noget."
+                "line": "Hvis du kommer herover, så skal jeg vise dig noget."
             }
         ]
     },
@@ -384,10 +366,10 @@ export const Episode1: Episode = [
         "end": "00:07:40,216",
         "lines": [
             {
-                "line": "Hold det. Højt op."
+                "line": "Hold det. Højt op, højt op"
             },
             {
-                "line": "Sid pænt, Kvik."
+                "line": "Sådan sid pænt, Kvik. Sid pænt"
             }
         ]
     },
@@ -408,10 +390,7 @@ export const Episode1: Episode = [
         "end": "00:07:48,973",
         "lines": [
             {
-                "line": "Det er ligesom ham i løvekulen."
-            },
-            {
-                "line": "Så kan du sagtens klare Kvik."
+                "line": "Det er jo ligesom ham i løvekulen. Så skulle du jo sagtens kunne klare sådan en lille fyr som Kvik."
             }
         ]
     },
@@ -432,10 +411,7 @@ export const Episode1: Episode = [
         "end": "00:07:58,412",
         "lines": [
             {
-                "line": "Der kan du se."
-            },
-            {
-                "line": "Akkurat som i løvekulen."
+                "line": "Ja der kan du se, Akkurat som i løvekulen."
             }
         ]
     },
@@ -443,6 +419,7 @@ export const Episode1: Episode = [
         "start": "00:08:15,300",
         "end": "00:08:22,331",
         "lines": [
+            // Herfra 
             {
                 "line": "Blonderne gør underværker på den"
             },
